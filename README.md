@@ -1,11 +1,14 @@
 Hangman !
 
 
-<b MVP >
+ MVP 
 
 . Component - Form for 'player 1 ' to add a word to be guessed
-. Component - Clickable Alpahabet 
+
+. Component - Clickable Alpahabet
+
 . Get image from travel image api from background - thunk element
+
 
 
 Stretch
