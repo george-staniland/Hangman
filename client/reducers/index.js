@@ -1,4 +1,3 @@
- 
 import {combineReducers} from 'redux'
 
 import magicWord from './magicWord'
@@ -8,3 +7,4 @@ const reducer = combineReducers({
 })
 
 export default reducer
+
