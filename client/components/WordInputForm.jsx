@@ -4,9 +4,19 @@ import { newWord } from '../actions/index'
 
 
 class WordInputForm extends React.Component {
+  state = {
+    magicWord: '',
+  }
+
+  handleChange = () => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
   handleSubmit = (event) => {
     event.preventDefault()
-    console.log('Success!')
+    this.props.dispatch(newWord(this.state.magicWord))
   }
 
   render() {
@@ -14,7 +24,7 @@ class WordInputForm extends React.Component {
       <div>
         <h3>What's the magic word? </h3>
         <form onSubmit={this.handleSubmit}>
-          <input name="magicWord" type="text">
+          <input onChange={this.handleChange} name="magicWord" type="text">
           </input>
           <input type="submit">
 
