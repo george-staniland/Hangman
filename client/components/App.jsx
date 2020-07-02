@@ -3,6 +3,7 @@ import Landing from './Landing'
 import WordInputForm from './WordInputForm'
 import { connect } from 'react-redux'
 import Letter from './Letter'
+import Alphabet from './Alphabet'
 
 
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
       : <p>Ya dun good kid, ya dun good.</p>
       
       }
+      <Alphabet />
     </>
   )
   }
