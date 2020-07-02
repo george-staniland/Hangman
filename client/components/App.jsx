@@ -8,8 +8,8 @@ class App extends React.Component {
   render() {
   return (
     <>
-    <Landing/>
-    <WordInputForm/>
+      <Landing/>
+      <WordInputForm/>
     </>
   )
   }
