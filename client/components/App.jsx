@@ -1,8 +1,14 @@
 import React from 'react'
+import Landing from './Landing'
+import WordInputForm from './WordInputForm'
+
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <>
+    <Landing/>
+    <WordInputForm/>
+    </>
   )
 }
 
