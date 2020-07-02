@@ -1,5 +1,10 @@
 import {combineReducers} from 'redux'
 
-export default combineReducers({
-  
+import magicWord from './magicWord'
+
+const reducer = combineReducers({
+  magicWord: magicWord,
 })
+
+export default reducer
+
