@@ -1,7 +1,7 @@
 Hangman !
 
 
- MVP 
+{ MVP }
 
 . Component - Form for 'player 1 ' to add a word to be guessed
 
@@ -11,4 +11,10 @@ Hangman !
 
 
 
-Stretch
+{ Stretch }
+
+. Loading Component
+
+. Drawing hangman - use basic images or SVG
+
+
