@@ -5,9 +5,9 @@ Hangman !
 
 . Component - Form for 'player 1 ' to add a word to be guessed
 
-. Component - Clickable Alpahabet
+. Component - Clickable Alpahabet / Letter Input
 
-. Get image from travel image api from background - thunk element
+. Get image from travel image api from background - thunk element. Hanging Location!
 
 
 
