@@ -3,13 +3,16 @@ import Landing from './Landing'
 import WordInputForm from './WordInputForm'
 
 
-const App = () => {
+class App extends React.Component {
+
+  render() {
   return (
     <>
     <Landing/>
     <WordInputForm/>
     </>
   )
+  }
 }
 
 export default App
