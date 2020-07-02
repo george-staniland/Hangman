@@ -6,14 +6,24 @@ import Letter from './Letter'
 
 
 class App extends React.Component {
+  createLetters = () => {
+    let arr = []
+    {for (var i = 0; i < this.props.magicWord.length; i++) {
+      arr.push(<Letter key={i}/>)
+    }}
+    return arr
+  }
+
 
   render() {
+    
   return (
     <>
       <Landing/>
       {this.props.magicWord[0] === ''
       ? <WordInputForm/>
-      : <p>Ya dun good kid, ya dun good.</p>
+      // : <p>Ya dun good kid, ya dun good.</p>
+      : this.createLetters()
       
       }
     </>
