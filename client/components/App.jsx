@@ -1,6 +1,7 @@
 import React from 'react'
 import Landing from './Landing'
 import WordInputForm from './WordInputForm'
+import Alphabet from './Alphabet'
 
 
 class App extends React.Component {
@@ -10,6 +11,7 @@ class App extends React.Component {
     <>
     <Landing/>
     <WordInputForm/>
+    <Alphabet />
     </>
   )
   }
