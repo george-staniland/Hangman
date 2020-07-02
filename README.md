@@ -1,7 +1,7 @@
 Hangman !
 
 
-<b> MVP <b/>
+<b MVP >
 
 . Component - Form for 'player 1 ' to add a word to be guessed
 . Component - Clickable Alpahabet 
