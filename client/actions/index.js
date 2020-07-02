@@ -1,7 +1,9 @@
+
 import request from 'superagent'
 
 export const REQUEST_IMAGE = 'REQUEST_IMAGE'
 export const RECEIVE_IMAGE = 'RECEIVE_IMAGE'
+export const NEW_WORD = 'NEW_WORD'
 
 export const requestImage = () => {
     return {
@@ -30,7 +32,8 @@ export const requestImage = () => {
         })
     }
   }
-export const NEW_WORD = 'NEW_WORD'
+
+
 
 export function newWord(word) {
   return {
