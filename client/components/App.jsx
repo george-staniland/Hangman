@@ -2,19 +2,31 @@ import React from 'react'
 import Landing from './Landing'
 import WordInputForm from './WordInputForm'
 import ImageApi from './BackgroundImage'
+import { connect } from 'react-redux'
+import Letter from './Letter'
 
 
 class App extends React.Component {
 
   render() {
-  return (
-    <>
-    <ImageApi/>
-    <Landing/>
-    <WordInputForm/>
-    </>
-  )
+    return (
+      <>
+        <ImageApi />
+        <Landing />
+        {this.props.magicWord[0] === ''
+          ? <WordInputForm />
+          : <p>Ya dun good kid, ya dun good.</p>
+
+        }
+      </>
+    )
   }
 }
 
-export default App
+function mapStateToProps(globalState) {
+  return {
+    magicWord: globalState.magicWord,
+  }
+}
+
+export default connect(mapStateToProps)(App)
