@@ -1,7 +1,6 @@
 import React from 'react'
 import Landing from './Landing'
 import WordInputForm from './WordInputForm'
-import ImageApi from './BackgroundImage'
 import { connect } from 'react-redux'
 import Letter from './Letter'
 import Alphabet from './Alphabet'
@@ -20,7 +19,6 @@ class App extends React.Component {
   render() {
   return (
     <>
-      <ImageApi />
       <Landing/>
       {this.props.magicWord[0] === ''
       ? <WordInputForm/>

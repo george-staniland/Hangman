@@ -1,3 +1,17 @@
 body {
   font-family: 'Schoolbell', cursive;
+  margin: 0px;
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+  z-index: -3;
+  opacity: 0.5;
+  margin-top: -88px;
+  /* border-bottom: 20px; */
+  
+  
 }
