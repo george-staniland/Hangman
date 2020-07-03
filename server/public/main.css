@@ -42,6 +42,10 @@ float: left;
   height: 250px;
 }
 
+.core {
+  text-align: center;
+}
+
 /* .big {
   font-size: 1000px;
 } */

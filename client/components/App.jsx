@@ -22,6 +22,7 @@ class App extends React.Component {
   return (
     <>
     <ImageApi/>
+    <div className="core">
       <Landing/>
       <Hangman/>
       {this.props.magicWord[0] === ''
@@ -32,6 +33,7 @@ class App extends React.Component {
         </div>
       }
       <Alphabet />
+      </div>
     </>
   )
 

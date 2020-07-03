@@ -29,7 +29,7 @@ class WordInputForm extends React.Component {
         <h3>What's the magic word? </h3>
 
         <form onSubmit={this.handleSubmit}>
-          <input onChange={this.handleChange} name="magicWord" type="text">
+          <input onChange={this.handleChange} name="magicWord" type="password">
 
           </input>
           <input type="submit">
