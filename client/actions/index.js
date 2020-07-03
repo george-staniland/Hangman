@@ -5,6 +5,7 @@ export const REQUEST_IMAGE = 'REQUEST_IMAGE'
 export const RECEIVE_IMAGE = 'RECEIVE_IMAGE'
 export const NEW_WORD = 'NEW_WORD'
 export const GUESS_LETTER = 'GUESS_LETTER'
+export const INCREASE_COUNT = 'INCREASE_COUNT'
 
 export const requestImage = () => {
     return {
@@ -38,6 +39,12 @@ export const requestImage = () => {
         .catch(err => {
           dispatch(showError(err.message))
         })
+    }
+  }
+
+  export function increaseCount () {
+    return {
+      type: INCREASE_COUNT
     }
   }
 
