@@ -1,34 +1,43 @@
-// import React from 'react'
+import React from 'react'
+import { connect } from 'react-redux'
 
 
-// const checkLoseState = () => {
-//     switch (this.props.count) {
-//         case 0:
-//             return 'hangman-01.png'
-//         case 1:
-//             return 'hangman-02.png'
-//         case 2:
-//             return 'hangman-03.png'
-//         case 3:
-//             return 'hangman-04.png'
-//         case 4:
-//             return 'hangman-05.png'
-//         case 5:
-//             return 'hangman-06.png'
-//         case 6:
-//             return 'hangman-06.png'
-//         default:
-//             return 'hangman-01.png'
-//     }
 
-// }
+class Hangman extends React.Component {
+  render() {
 
-// class Hangman extends React.Component {
-//     render () {
-//         return (
-//            checkLoseState()
-//         )
-//     }
-// }
+    const checkLoseState = () => {
+      switch (this.props.count) {
+        case 0:
+          return '/images/hangman-01.png'
+        case 1:
+          return '/images/hangman-02.png'
+        case 2:
+          return '/images/hangman-03.png'
+        case 3:
+          return '/images/hangman-04.png'
+        case 4:
+          return '/images/hangman-05.png'
+        case 5:
+          return '/images/hangman-06.png'
+        case 6:
+          return '/images/hangman-07.png'
+        default:
+          return '/images/hangman-01.png'
+      }
+    }
+    return (
+      <>
+        <img id='hangedMan' src={checkLoseState()} />
+      </>
+    )
+  }
+}
 
-// export default Hangman
+function mapStateToProps(globalState) {
+  return {
+    count: globalState.count,
+  }
+}
+
+export default connect(mapStateToProps)(Hangman)
