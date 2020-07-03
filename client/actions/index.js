@@ -22,7 +22,7 @@ export const requestImage = () => {
     return (dispatch) => {
       dispatch(requestImage())
       return request
-        .get('https://picsum.photos/800')
+        .get('https://picsum.photos/1000')
         .then(res => {
             console.log(res)
           dispatch(receiveImage(res.xhr.responseURL))

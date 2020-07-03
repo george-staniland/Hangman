@@ -22,8 +22,8 @@ class ImageApi extends React.Component {
 console.log(this.props.image)
 console.log('test')
     return (
-      <div className='background-image'>
-    <img src={this.props.image}/>
+      <div >
+    <img className='background-image'  src={this.props.image}/>
     
       </div>
     )
