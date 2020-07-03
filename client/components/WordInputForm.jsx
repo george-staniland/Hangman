@@ -20,13 +20,11 @@ class WordInputForm extends React.Component {
     event.preventDefault()
     this.props.dispatch(newWord(this.state.magicWord))
   }
-
   render() {
     return (
       <div>
         <h3>What's the magic word? </h3>
-
-
+        
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} name="magicWord" type="text">
 
@@ -39,6 +37,7 @@ class WordInputForm extends React.Component {
     )
   }
 }
+
 
 
 
