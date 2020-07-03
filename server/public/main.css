@@ -13,5 +13,29 @@ body {
   margin-top: -88px;
   /* border-bottom: 20px; */
   
-  
 }
+
+
+
+p {
+float: left;
+
+}
+
+.letterDiv {
+  display: block;
+  left: 50%;
+  font-size: 100px;
+}
+
+.letter {
+  display: inline-block;
+  border-bottom: solid 4px black;
+  margin: 40px;
+  width: 40px;
+}
+
+.invisibleWord {
+  display: none;
+}
+

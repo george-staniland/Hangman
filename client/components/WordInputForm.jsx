@@ -7,13 +7,26 @@ import ImageApi from './BackgroundImage'
 
 
 class WordInputForm extends React.Component {
+  state = {
+    magicWord: '',
+  }
+
+  handleChange = () => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault()
+    this.props.dispatch(newWord(this.state.magicWord))
+  }
   render() {
     return (
       <>
       <ImageApi/>
       <div>
         <h3>What's the magic word? </h3>
-
 
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} name="magicWord" type="text">
@@ -29,6 +42,7 @@ class WordInputForm extends React.Component {
     )
   }
 }
+
 
 
 
