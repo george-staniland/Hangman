@@ -2,8 +2,7 @@ import React from 'react'
 
 import { connect } from 'react-redux'
 import { newWord } from '../actions/index'
-import ImageApi from './BackgroundImage'
-
+import Hangman from './Hangman'
 
 
 class WordInputForm extends React.Component {
@@ -19,12 +18,13 @@ class WordInputForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.dispatch(newWord(this.state.magicWord))
+    this.props.dispatch(newWord(this.state.magicWord.toLowerCase()))
   }
   render() {
     return (
       <>
-      <ImageApi/>
+      
+      {/* <Hangman/> */}
       <div>
         <h3>What's the magic word? </h3>
 

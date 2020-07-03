@@ -10,9 +10,8 @@ body {
   position: fixed;
   z-index: -3;
   opacity: 0.5;
-  margin-top: -88px;
-  /* border-bottom: 20px; */
-  
+  margin-top: -20px;
+
 }
 
 
@@ -38,4 +37,12 @@ float: left;
 .invisibleWord {
   display: none;
 }
+
+#hangedMan {
+  height: 250px;
+}
+
+/* .big {
+  font-size: 1000px;
+} */
 
