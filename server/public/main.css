@@ -38,6 +38,10 @@ float: left;
   display: none;
 }
 
+#hangedMan {
+  height: 250px;
+}
+
 /* .big {
   font-size: 1000px;
 } */
