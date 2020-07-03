@@ -18,7 +18,7 @@ class WordInputForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.dispatch(newWord(this.state.magicWord))
+    this.props.dispatch(newWord(this.state.magicWord.toLowerCase()))
   }
   render() {
     return (
