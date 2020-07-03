@@ -1,3 +1,25 @@
 body {
   font-family: 'Schoolbell', cursive;
 }
+
+p {
+float: left;
+
+}
+
+.letterDiv {
+  display: block;
+  left: 50%;
+  font-size: 100px;
+}
+
+.letter {
+  display: inline-block;
+  border-bottom: solid 4px black;
+  margin: 40px;
+  width: 40px;
+}
+
+.invisibleWord {
+  display: none;
+}
