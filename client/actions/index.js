@@ -4,6 +4,7 @@ import request from 'superagent'
 export const REQUEST_IMAGE = 'REQUEST_IMAGE'
 export const RECEIVE_IMAGE = 'RECEIVE_IMAGE'
 export const NEW_WORD = 'NEW_WORD'
+export const GUESS_LETTER = 'GUESS_LETTER'
 
 export const requestImage = () => {
     return {
@@ -15,6 +16,13 @@ export const requestImage = () => {
     return {
       type: RECEIVE_IMAGE,
       image: image
+    }
+  }
+
+  export const guessLetter = (letter) => {
+    return {
+      type: GUESS_LETTER,
+      letter: letter
     }
   }
   
