@@ -4,29 +4,20 @@ import { connect } from 'react-redux'
 import { newWord } from '../actions/index'
 
 
+
 class WordInputForm extends React.Component {
-  state = {
-    magicWord: '',
-  }
-
-  handleChange = () => {
-    this.setState({
-      [event.target.name]: event.target.value
-    })
-  }
-
-  handleSubmit = (event) => {
-    event.preventDefault()
-    this.props.dispatch(newWord(this.state.magicWord))
-  }
-
   render() {
     return (
       <div>
         <h3>What's the magic word? </h3>
 
+        <form>
+          <input type="text">
+
+
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} name="magicWord" type="text">
+
           </input>
           <input type="submit">
 
@@ -38,6 +29,9 @@ class WordInputForm extends React.Component {
 }
 
 
+
+
+
 function mapStateToProps(globalState) {
   return {
     magicWord: globalState.magicWord,
@@ -45,4 +39,5 @@ function mapStateToProps(globalState) {
 }
 
 export default connect(mapStateToProps)(WordInputForm)
+
 
