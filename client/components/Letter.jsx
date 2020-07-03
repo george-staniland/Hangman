@@ -7,6 +7,7 @@ class Letter extends React.Component {
     return (
       <div className="letter">
         <p className='invisibleWord'>{this.props.magicWord[this.props.index]}</p>
+        
       </div>
     )
   }
