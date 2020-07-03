@@ -42,17 +42,6 @@ class WordInputForm extends React.Component {
 
 
 
-function mapStateToProps(globalState) {
-  return {
-    magicWord: globalState.magicWord,
-  }
-}
-
-export default connect(mapStateToProps)(WordInputForm)
-
-
-
-
 
 function mapStateToProps(globalState) {
   return {
