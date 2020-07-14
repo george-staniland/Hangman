@@ -6,7 +6,7 @@ import { increaseCount } from '../actions/index'
 class Alphabet extends React.Component {
 
   generateButtons = () => {
-    return "abcdefghjklmnopqrstuvwxyz".split("").map(letter => (
+    return "abcdefghijklmnopqrstuvwxyz".split("").map(letter => (
       <button
         className='btn btn-lg btn-primary m-2'
         key={letter}
