@@ -1,3 +1,3 @@
-Ben I, Derek, George, Marta, Nick - TEAM 'HANGING IN THERE'!
-
+#### Early version hosted on Heroku here
+##### https://hangman-kotare-2020.herokuapp.com/
 
