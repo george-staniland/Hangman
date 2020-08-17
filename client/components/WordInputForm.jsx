@@ -26,7 +26,7 @@ class WordInputForm extends React.Component {
       
       {/* <Hangman/> */}
       <div>
-        <h3>What's the magic word? </h3>
+        <h3 id="game-text" >Player 1 - Enter your secret word below! </h3>
 
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} name="magicWord" type="password">

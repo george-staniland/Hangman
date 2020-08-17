@@ -33,6 +33,9 @@ class Alphabet extends React.Component {
       <div>
         {this.generateButtons()}
       </div>
+      <div>
+       < h3 id="game-text">Player 2 guess the word!</h3> 
+      </div>
       </>
     )
   }

@@ -27,12 +27,12 @@ class App extends React.Component {
       <Hangman/>
       {this.props.magicWord[0] === ''
       ? <WordInputForm/>
-      // : <p>Ya dun good kid, ya dun good.</p>
       : <div className="letterDiv">
           {this.createLetters()}
+          <Alphabet />
         </div>
       }
-      <Alphabet />
+      
       </div>
     </>
   )

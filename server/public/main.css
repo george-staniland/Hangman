@@ -18,7 +18,10 @@ body {
 
 p {
 float: left;
+}
 
+#game-text{
+  font-size: 30px;
 }
 
 .letterDiv {
